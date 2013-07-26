@@ -27,4 +27,4 @@ all, but please adhere to code style and open a ticket before proceeding with yo
 
 ## About the Author
 
-My name is **Matt Farmer**. I'm a code bandit current slinging code on behalf of [Elemica](http://elemica.com), [Anchor Tab](http://anchortab.com), the [Lift Framework](http://liftweb.net), and a few other small outfits who are out to make the world a better place. I [tweet](http://twitter.com/farmdawgnation) regularly, and [blog](http://farmdawgnation.com) and little bit less so.
+My name is **Matt Farmer**. I'm a code bandit currently slinging code on behalf of [Elemica](http://elemica.com), [Anchor Tab](http://anchortab.com), the [Lift Framework](http://liftweb.net), and a few other small outfits who are out to make the world a better place. I [tweet](http://twitter.com/farmdawgnation) regularly, and [blog](http://farmdawgnation.com) and little bit less so.
