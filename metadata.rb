@@ -1,4 +1,4 @@
-name              'sbt'
+name              'chef-sbt'
 maintainer        'Matt Farmer'
 maintainer_email  'matt@frmr.me'
 license           'Apache 2.0'
