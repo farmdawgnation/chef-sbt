@@ -18,7 +18,7 @@
 #
 
 remote_file "/usr/local/bin/sbt-launch.jar" do
-  source "http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/#{node[:sbt][:version]}/sbt-launch.jar"
+  source "http://repo.typesafe.com/typesafe/simple/ivy-releases/org.scala-sbt/sbt-launch/#{node[:sbt][:version]}/sbt-launch.jar"
   action :create
 
   not_if "java -jar /usr/local/bin/sbt-launch.jar \"sbt-version\" | tail -1 | awk '{print $2}' | grep '#{node[:sbt][:version]}'"
