@@ -5,9 +5,12 @@ license           'Apache 2.0'
 description       'Installs the sbt version you request from manual download.'
 version            '0.0.1'
 
+depends 'java'
+depends 'openjdk'
+
 recipe 'sbt', 'Downloads and installs sbt in your path.'
 
-%w{ubuntu debian}.each do |os|
+%w{ubuntu debian smartos}.each do |os|
   supports os
 end
 

@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: chef-sudo
+# Cookbook Name:: chef-sbt
 # Attribute File:: default
 #
 # Copyright 2013 Matt Farmer
@@ -17,5 +17,13 @@
 # limitations under the License.
 #
 
-default['sbt']['version'] = '0.12.4'
+default['sbt']['version'] = '0.13.8'
 default['sbt']['java_options'] = '-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=512M'
+default['sbt']['java_cookbook'] = 'openjdk'
+
+case node['platform']
+when 'smartos'
+  default['sbt']['path'] = '/opt/local'
+when 'ubuntu'
+	default['sbt']['path'] = '/usr/local'
+end

@@ -1,0 +1,26 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+  - name: smartos-base-64-14.3.0
+    driver_config:
+      box: livinginthepast/smartos-base64
+      box_url: https://atlas.hashicorp.com/livinginthepast/boxes/smartos-base64
+      vagrantfile_erb: test/templates/Vagrantfile.smartos.erb
+      zone:
+        name: base64-lts
+        brand: joyent
+        image: 62f148f8-6e84-11e4-82c5-efca60348b9f
+    provisioner:
+      require_chef_omnibus: true
+      chef_omnibus_url: https://raw.github.com/wanelo-chef/chef-bootstrap/master/latest.sh
+
+suites:
+  - name: default
+    run_list:
+      - recipe[chef-sbt::default]
