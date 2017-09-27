@@ -12,7 +12,8 @@ as well. Haven't done a lot of testing yet.
 
 The chef-sbt cookbook recognizes the following attributes.
 
-* `node['sbt']['version']` - The version of the sbt launcher you would like to use. Currently, this defaults to 0.12.4, the latest stable, but can be any version available in the [typesafe download repo](http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/).
+* `node['sbt']['version']` - The version of the sbt launcher you would like to use. Currently, this defaults to 0.13.8, the latest stable, but can be any version available in the [typesafe download repo](http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/).
+* `node['sbt']['checksum']` - The SHA256 checksum of the file downloaded from Typesafe.com. (optional)
 * `node['sbt']['java_options']` - The JVM flags that should be passed to the JVM when sbt starts. Currently, this is defaulted to `-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=512M`, and that works well for me... but YMMV.
 
 ### Recipes

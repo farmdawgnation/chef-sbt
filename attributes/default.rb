@@ -18,6 +18,7 @@
 #
 
 default['sbt']['version'] = '0.13.8'
+default['sbt']['checksum'] = '6570bb03df6138ffaa7ac0bbe35eb4ea79062d1146b6929c75cf238d14dd9158'
 default['sbt']['java_options'] = '-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=512M'
 default['sbt']['java_cookbook'] = 'openjdk'
 
