@@ -20,7 +20,8 @@
 include_recipe "#{node[:sbt][:java_cookbook]}"
 
 remote_file "#{node[:sbt][:path]}/bin/sbt-launch.jar" do
-  source "http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/#{node[:sbt][:version]}/sbt-launch.jar"
+  source "https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/#{node[:sbt][:version]}/sbt-launch.jar"
+  checksum node['sbt']['checksum'] if node['sbt']['checksum']
   action :create
   owner "root"
   group "root"
